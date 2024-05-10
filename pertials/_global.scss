@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Playfair Display", serif;
+    font-family: $primary-font;
 }
 body{
     position: relative;
+    background-color: #10101a;
 }
 a{
     text-decoration: none;

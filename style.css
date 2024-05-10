@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
   position: relative;
+  background-color: #10101a;
 }
 
 a {
@@ -38,7 +40,7 @@ a {
   align-items: center;
   position: absolute;
   left: 18%;
-  bottom: 68%;
+  bottom: 71%;
   z-index: 10000;
 }
 .sideBar .header .header-image {
@@ -299,4 +301,91 @@ header {
   header .menuBtn .bx-menu {
     font-size: 2rem;
   }
+}
+.name-section {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  color: white;
+  padding: 2rem;
+  margin-left: 17rem;
+  margin-top: 5rem;
+}
+.name-section .left-hand h3 {
+  font-size: 3.5rem;
+}
+.name-section .left-hand p {
+  font-weight: 300;
+  margin-top: 0.6rem;
+  font-size: 1.2rem;
+}
+.name-section .left-hand h4 {
+  font-size: 1rem;
+}
+.name-section .left-hand h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.name-section .left-hand .last {
+  margin-bottom: 3rem;
+}
+.name-section .left-hand .cv-btn {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  background-color: #00c278;
+  background-image: none;
+  border: 1px solid #00c278;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.name-section .left-hand .cv-btn:focus {
+  text-decoration: none;
+}
+.name-section .left-hand .cv-btn:hover {
+  text-decoration: none;
+}
+.name-section .left-hand .cv-btn:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+.name-section .left-hand .cv-btn:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+@media (min-width: 768px) {
+  .name-section .left-hand .cv-btn {
+    padding: 12px 50px;
+  }
+}
+.name-section .right-hand {
+  width: 33rem;
+  height: 33rem;
+}
+.name-section .right-hand img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
