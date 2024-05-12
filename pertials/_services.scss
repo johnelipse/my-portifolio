@@ -1,0 +1,54 @@
+.services{
+    color: white;
+    padding: 2rem;
+    margin-left: 15rem;
+    margin-top: 5rem;
+    h2{
+        font-size: 30px;
+        font-weight: 300;
+       letter-spacing: 8px;
+    }
+.major-container{
+margin-top: 2rem;
+display: flex;
+gap: 1rem;
+.service{
+width: 50%;
+padding: 2rem;
+background-color: black;
+p{
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
+&:hover{
+background-color: $primary-color;
+transition: 0.4s;
+}
+}
+}
+}
+@media(max-width:360px){
+    .services{
+        margin-top: 2rem;
+        padding: 1rem;
+        margin-left: 0rem;
+        h2{
+            font-size: 28px;
+           letter-spacing: 4px;
+        }
+    .major-container{
+    flex-direction: column;
+    .service{
+    width: 100%;
+    padding: 1rem;
+    p{
+        margin-top: .5rem;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    }
+    }
+    }
+}
