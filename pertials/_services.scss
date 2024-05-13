@@ -29,6 +29,29 @@ transition: 0.4s;
 }
 }
 }
+@media(max-width:520px){
+    .services{
+        margin-top: 2rem;
+        padding: 1rem;
+        margin-left: 0rem;
+        h2{
+            font-size: 28px;
+           letter-spacing: 4px;
+        }
+    .major-container{
+    flex-direction: column;
+    .service{
+    width: 100%;
+    padding: 1rem;
+    p{
+        margin-top: .5rem;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    }
+    }
+    }
+}
 @media(max-width:360px){
     .services{
         margin-top: 2rem;
