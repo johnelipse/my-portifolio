@@ -81,3 +81,57 @@ textarea{
     }
   }
 }
+@media(max-width:360px){
+  .contact-me {
+    padding: 1rem;
+    margin-left: 0rem;
+    h2 {
+      font-size: 27px;
+      letter-spacing: 7px;
+    }
+    .contact-cards {
+   flex-direction: column;
+      .contact-card-1 {
+        background-color: black;
+        width: 100%;
+        height: 13rem;
+        padding: 1rem;
+        h3 {
+          font-size: 1.5rem;
+        }
+        p {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        .contact {
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+          .bx {
+            font-size: 1.4rem;
+            color: $primary-color;
+          }
+        }
+      }
+      .contact-card-2 {
+        form {
+         .form-field {
+            input {
+              font-size: 15px;
+            }
+          }
+          .subject {
+            font-size: 15px;
+          }
+  textarea{
+     font-size: 15px;
+  }
+  button{
+    font-size: 16px;
+    padding: 9px 20px;
+  }
+        }
+      }
+    }
+  }
+}
