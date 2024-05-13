@@ -70,3 +70,12 @@ allBtn.addEventListener("click", function(){
   htmlCss.style.display="none";
   htmlCssJs.style.display="none";
 })
+
+//loader
+const loadingContainer = document.getElementById("loading-container");
+setTimeout(() => {
+  hideSpinner();
+}, 5000);
+function hideSpinner() {
+  loadingContainer.style.display = "none";
+}

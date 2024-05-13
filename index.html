@@ -6,8 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <div id="loading-container">
+        <span class="loader"></span>
+      </div>
 <section id="sideBar" class="sideBar">
 <div class="section-header">
 </div>
@@ -34,7 +38,7 @@
 </div>
 </section>
 <div class="main-container" data-spy="scroll" data-target="#sideBar" data-offset="5">
-    <section class="name-section" id="name-section">
+    <section  data-aos="fade-up" class="name-section" id="name-section">
         <div class="left-hand">
         <h4>Hello, I am</h4>
         <h3>Banyweire John</h3>
@@ -48,7 +52,7 @@
         <img src="/images/me.jpg" alt="loading">
         </div>
         </section>
-        <div class="about-me" id="about-me">
+        <div data-aos="fade-up"  class="about-me" id="about-me">
             <div class="about-heading">
             <img src="/images/me.jpg" alt="loading">
                 <h2>ABOUT ME</h2>
@@ -60,7 +64,7 @@
         <a href="#portfolio"><button class="majorBtn">Portfolio</button></a>
          </div>  
         </div>
-        <div class="portfolio" id="portfolio">
+        <div data-aos="fade-up"  class="portfolio" id="portfolio">
             <h2>My Portfolio</h2>
             <div class="portfolio-btns">
                 <button id="allBtn" class="portfolio-btn">All</button>
@@ -183,7 +187,7 @@
             </div>
          </div>
         </div>
-        <div class="education-skills">
+        <div data-aos="fade-up"  class="education-skills">
         <h2>EDUCATION & SKILLS</h2>
         <div class="edu-bg">
             <div class="educaton">
@@ -253,7 +257,7 @@
                  </div>
         </div> 
         </div>
-        <div class="services" id="services">
+        <div data-aos="fade-up"  class="services" id="services">
             <h2>WHAT I DO?</h2>
         <div class="major-container">
             <div class="service">
@@ -270,7 +274,7 @@
           </div>
         </div>
         </div>
-        <div class="contact-me" id="contact-me">
+        <div data-aos="fade-up"  class="contact-me" id="contact-me">
         <h2>Get In Touch</h2>
         <div class="contact-cards">
         <div class="contact-card-1">
@@ -310,7 +314,11 @@
     <h3>Banyweire</h3>
  <div class="btn"> <button id="menuBtn" class="menuBtn">  <i class='bx bx-menu'></i></button>
     <button id="deleteBtn" class="menuBtn deleteBtn"> <i class='bx bx-x'></i></button></div>
-</header>    
+</header> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>   
 <script src="app.js"></script>
 </body>
 </html>

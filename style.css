@@ -1956,4 +1956,44 @@ header {
     background-color: white;
     color: black;
   }
+}
+#loading-container {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loading-container .loader {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 197, 128, 0.3450980392) 33%, #00c57f 100%);
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+#loading-container .loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #263238;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */
