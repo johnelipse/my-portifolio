@@ -129,7 +129,7 @@ a {
   color: rgba(194, 193, 193, 0.805);
   display: flex;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   gap: 0.5rem;
   margin-top: 0.4rem;
 }
@@ -139,7 +139,7 @@ a {
 }
 .sideBar .sidebar-footer {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 1rem;
   padding: 0.5rem 1rem;
 }
@@ -292,7 +292,7 @@ a {
   }
   .sideBar .sidebar-footer {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 1rem;
     padding: 0.5rem 1rem;
   }
@@ -371,7 +371,7 @@ a {
   }
   .sideBar .sidebar-footer {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 1rem;
     padding: 0.5rem 1rem;
   }
@@ -450,7 +450,7 @@ a {
   }
   .sideBar .sidebar-footer {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 1rem;
     padding: 0.5rem 1rem;
   }
@@ -529,7 +529,7 @@ a {
   }
   .sideBar .sidebar-footer {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 1rem;
     padding: 0.5rem 1rem;
   }
@@ -575,6 +575,28 @@ header {
   display: none;
 }
 
+@media (max-width: 920px) {
+  header {
+    margin-left: 0rem;
+    padding: 1rem;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: #10101a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .menuBtn {
+    background-color: #00c278;
+    color: white;
+    border: none;
+  }
+  header .menuBtn .bx-menu {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 520px) {
   header {
     margin-left: 0rem;
