@@ -84,6 +84,33 @@ gap: 1rem;
       transform: scale(1);
     }
   }
+@media(max-width:920px){
+    .portfolio{
+        padding: 1rem;
+        margin-left: 0rem;
+        h2{
+            font-size: 28px;
+           letter-spacing: 7px;
+        }
+    .portfolio-btns{
+    gap: 1.8rem;
+     button{
+    font-size: 16px;
+    }
+    
+    }
+    .card-data{
+    p{
+        font-size: 16px;
+    }
+.card-footer{
+a{
+    font-size: 14px;
+}
+}
+    }
+        }
+    }   
 @media(max-width:520px){
     .portfolio{
         padding: 1rem;

@@ -86,6 +86,46 @@ width: 80%;
 }
 }
 }
+@media(max-width:920px){
+    .education-skills{
+        margin-left: 0rem;
+        margin-top: 3rem;
+        h2{
+        font-size: 25px;
+       letter-spacing: 3px;
+    }
+    .edu-bg{
+  flex-direction: column;
+    .educaton{
+        width: 60%;
+        .dev{
+    h4{
+        width: 12%;
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 18px;
+    }
+         }
+        }
+    .skills{
+    width: 100%;
+    h3{
+        font-size: 29px;
+    }
+    p{
+        font-weight: lighter;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    h4{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    }
+    }
+    }
+}
 @media(max-width:520px){
     .education-skills{
         margin-left: 0rem;

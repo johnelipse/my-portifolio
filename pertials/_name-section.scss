@@ -90,6 +90,37 @@ img{
 }
 }
 } 
+@media(max-width:920px){
+  .name-section{
+      align-items: start;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 1rem;
+    margin-left: 0rem;
+    margin-top: 5rem;
+    .left-hand{
+    h3{
+    font-size: 37px;
+    }
+    p{
+    font-size: 1rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    h5{
+    font-size: 1rem;
+    }
+    .cv-btn {
+        font-size: 16px;
+      }
+      }
+    .right-hand{
+    width: 20rem;
+    height: 20rem;
+    }
+    }    
+}
 @media(max-width:520px){
   .name-section{
       align-items: start;
