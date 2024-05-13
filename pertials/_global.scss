@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: $primary-font;
 }
+html{
+scroll-behavior: smooth;
+}
 body{
     position: relative;
     background-color: #10101a;
