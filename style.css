@@ -851,6 +851,7 @@ header {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
+  width: 100%;
 }
 .contact-me .contact-cards .contact-card-1 {
   background-color: black;
@@ -876,7 +877,7 @@ header {
 }
 .contact-me .contact-cards .contact-card-2 form {
   background-color: black;
-  width: 125%;
+  width: 120%;
   padding: 1rem;
 }
 .contact-me .contact-cards .contact-card-2 form .form-field {

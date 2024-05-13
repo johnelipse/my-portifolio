@@ -12,6 +12,7 @@
 display: flex;
 gap: 2rem;
 margin-top: 2rem;
+width: 100%;
     .contact-card-1 {
       background-color: black;
       width: 30%;
@@ -37,7 +38,7 @@ margin-top: 2rem;
     .contact-card-2 {
       form {
         background-color: black;
-        width: 125%;
+        width: 120%;
         padding: 1rem;
         .form-field {
           display: flex;
