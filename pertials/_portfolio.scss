@@ -28,12 +28,20 @@ cursor: pointer;
     border-radius: 0.7rem;
 .image{
 width: 100%;
+border-top-left-radius: 0.7rem;
+border-top-right-radius: 0.7rem;
+overflow: hidden;
 img{
 width: 100%;
+overflow: hidden;
 height: 14rem;
 object-fit: cover;
 border-top-left-radius: 0.7rem;
 border-top-right-radius: 0.7rem;
+&:hover{
+transform: scale(1.03);
+transition: 0.4s;
+}
 }
 }
 .card-data{

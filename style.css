@@ -1722,14 +1722,22 @@ header {
 }
 .portfolio .all-card .image {
   width: 100%;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  overflow: hidden;
 }
 .portfolio .all-card .image img {
   width: 100%;
+  overflow: hidden;
   height: 14rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 0.7rem;
   border-top-right-radius: 0.7rem;
+}
+.portfolio .all-card .image img:hover {
+  transform: scale(1.03);
+  transition: 0.4s;
 }
 .portfolio .all-card .card-data {
   padding: 1rem;
