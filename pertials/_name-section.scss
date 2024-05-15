@@ -64,6 +64,8 @@ margin-top: 1.3rem;
 
 .cv-btn:hover {
   text-decoration: none;
+  background-color: #00c278c0;
+  transition: 0.5s;
 }
 
 .cv-btn:active {
@@ -210,6 +212,11 @@ width: 100%;
     width: 20rem;
     height: 20rem;
     }
+    }
+    .typed_wrap h1 {
+      display: inline;
+      font-weight: 600;
+      font-size: 1rem;
     }    
 }
 @media(max-width:360px){
@@ -241,5 +248,10 @@ width: 100%;
     width: 20rem;
     height: 20rem;
     }
-    }    
-}
+    }  
+    .typed_wrap h1 {
+      display: inline;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+ }

@@ -60,6 +60,8 @@ a {
 
 .majorBtn:hover {
   text-decoration: none;
+  background-color: rgba(0, 194, 120, 0.7529411765);
+  transition: 0.5s;
 }
 
 .majorBtn:active {
@@ -1038,6 +1040,8 @@ header {
 }
 .name-section .left-hand .cv-btn:hover {
   text-decoration: none;
+  background-color: rgba(0, 194, 120, 0.7529411765);
+  transition: 0.5s;
 }
 .name-section .left-hand .cv-btn:active {
   box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
@@ -1169,6 +1173,11 @@ header {
     width: 20rem;
     height: 20rem;
   }
+  .typed_wrap h1 {
+    display: inline;
+    font-weight: 600;
+    font-size: 1rem;
+  }
 }
 @media (max-width: 360px) {
   .name-section {
@@ -1197,6 +1206,11 @@ header {
   .name-section .right-hand {
     width: 20rem;
     height: 20rem;
+  }
+  .typed_wrap h1 {
+    display: inline;
+    font-weight: 600;
+    font-size: 1rem;
   }
 }
 .about-me {
