@@ -37,13 +37,17 @@
     <a href="https://www.linkedin.com/in/john-banyweire-26321b281/" target="_blank"><i class='bx bxl-linkedin'></i></a>
 </div>
 </section>
-<div class="main-container" data-spy="scroll" data-target="#sideBar" data-offset="5">
-    <section  data-aos="fade-up" class="name-section" id="name-section">
+<div class="main-container">
+    <section  data-aos="fade-up" class="name-section scrollable" id="name-section">
         <div class="left-hand">
         <h4>Hello, I am</h4>
         <h3>Banyweire John</h3>
-        <h5>I am a passionate wed Developer</h5>
-        <p> Creative Fullstack Developer & Graphics Designer | Expert</p>
+        <div class="banner">
+            <div class="typed_wrap">
+                <h1>I am a passionate <span class="typed" id="typed"></span></h1>
+            </div>
+        </div>
+        <p class="first"> Creative Fullstack Developer & Graphics Designer | Expert</p>
         <p>in HTML, CSS, JavaScript, next js, etc</p>
         <p class="last">& Design Tools | Transforming Ideas into Engaging Digital Experiences</p>
        <a href="CV Resume.pdf" download="CV Resume.pdf"> <button class="cv-btn" role="button">Download CV</button></a>
@@ -52,7 +56,7 @@
         <img src="/images/me.jpg" alt="loading">
         </div>
         </section>
-        <div data-aos="fade-up"  class="about-me" id="about-me">
+        <div data-aos="fade-up"  class="about-me scrollable" id="about-me">
             <div class="about-heading">
             <img src="/images/me.jpg" alt="loading">
                 <h2>ABOUT ME</h2>
@@ -64,7 +68,7 @@
         <a href="#portfolio"><button class="majorBtn">Portfolio</button></a>
          </div>  
         </div>
-        <div data-aos="fade-up"  class="portfolio" id="portfolio">
+        <div data-aos="fade-up"  class="portfolio scrollable" id="portfolio">
             <h2>My Portfolio</h2>
             <div class="portfolio-btns">
                 <button id="allBtn" class="portfolio-btn">All</button>
@@ -257,7 +261,7 @@
                  </div>
         </div> 
         </div>
-        <div data-aos="fade-up"  class="services" id="services">
+        <div data-aos="fade-up"  class="services scrollable" id="services">
             <h2>WHAT I DO?</h2>
         <div class="major-container">
             <div class="service">
@@ -274,7 +278,7 @@
           </div>
         </div>
         </div>
-        <div data-aos="fade-up"  class="contact-me" id="contact-me">
+        <div data-aos="fade-up"  class="contact-me scrollable" id="contact-me">
         <h2>Get In Touch</h2>
         <div class="contact-cards">
         <div class="contact-card-1">
@@ -318,7 +322,8 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
-</script>   
+</script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="app.js"></script>
 </body>
 </html>

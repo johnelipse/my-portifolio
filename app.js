@@ -2,7 +2,7 @@ const menuBtn = document.querySelector("#menuBtn");
 const sideBar = document.querySelector(".sideBar");
 const deleteBtn = document.querySelector("#deleteBtn");
 const icony = document.querySelectorAll(".icony");
-console.log(menuBtn, sideBar, deleteBtn, icony);
+// console.log(menuBtn, sideBar, deleteBtn, icony);
 deleteBtn.style.display = "none";
 menuBtn.addEventListener("click", function () {
   sideBar.style.display = "block";
@@ -79,3 +79,36 @@ setTimeout(() => {
 function hideSpinner() {
   loadingContainer.style.display = "none";
 }
+
+//scroll spy behaviour
+const navLinks=document.querySelectorAll(".icony")
+const scrollables=document.querySelectorAll(".scrollable")
+// console.log(navLinks,scrollables)
+
+function updateActiveClass() {
+  const scrollY = window.scrollY; // Get current scroll position
+
+  scrollables.forEach((scrollable, index) => {
+    const sectionTop = scrollable.offsetTop;
+    const sectionHeight = scrollable.offsetHeight;
+    const sectionBottom = sectionTop + sectionHeight;
+
+    if (scrollY >= sectionTop && scrollY < sectionBottom) {
+      navLinks.forEach(link => link.classList.remove('active')); // Remove active class from all links
+      navLinks[index].classList.add('active'); // Add active class to the current section's link
+      return; // Exit the loop after finding the active section
+    }
+  });
+}
+window.addEventListener('scroll', updateActiveClass); // Add event listener for scroll event
+
+updateActiveClass(); // Call the function initially to handle initial scroll position
+
+// typed js
+var options = {
+  strings: ['Web Developer.', 'Graphics Designer.'],
+  typeSpeed: 150,
+  loop: true
+};
+
+var typed = new Typed('#typed', options);

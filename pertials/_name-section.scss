@@ -11,6 +11,9 @@ h3{
 font-size: 3.5rem;
 margin-top: 1rem;
 }
+.first{
+margin-top: 3rem;
+}
 p{
 font-weight: lighter;
 margin-top: 0.6rem;
@@ -90,6 +93,63 @@ img{
 }
 }
 } 
+.banner {
+	display: block;
+	position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  }
+.typed_wrap {
+	display: block;
+width: 100%;
+	/*centers it in the .banner*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.typed_wrap h1 {
+	display: inline;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 @media(max-width:920px){
   .name-section{
       align-items: start;

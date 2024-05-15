@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+.active {
+  color: #00c278;
+}
+
 .majorBtn {
   -webkit-appearance: button;
      -moz-appearance: button;
@@ -980,6 +984,9 @@ header {
   font-size: 3.5rem;
   margin-top: 1rem;
 }
+.name-section .left-hand .first {
+  margin-top: 3rem;
+}
 .name-section .left-hand p {
   font-weight: lighter;
   margin-top: 0.6rem;
@@ -1057,6 +1064,54 @@ header {
   border-radius: 50%;
 }
 
+.banner {
+  display: block;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.typed_wrap {
+  display: block;
+  width: 100%;
+  /*centers it in the .banner*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.typed_wrap h1 {
+  display: inline;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+  content: "|";
+  display: inline;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor {
+  opacity: 0;
+  display: none;
+}
+
+/*Custom cursor animation*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (max-width: 920px) {
   .name-section {
     align-items: start;
