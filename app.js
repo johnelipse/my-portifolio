@@ -79,6 +79,9 @@ setTimeout(() => {
 function hideSpinner() {
   loadingContainer.style.display = "none";
 }
+function showSpinner() {
+  loadingContainer.style.display = "flex";
+}
 
 //scroll spy behaviour
 const navLinks=document.querySelectorAll(".icony")
