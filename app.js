@@ -109,7 +109,7 @@ updateActiveClass(); // Call the function initially to handle initial scroll pos
 
 // typed js
 var options = {
-  strings: ['Web Developer.', 'Graphics Designer.'],
+  strings: ['Web Developer.', 'Fullstack Developer.'],
   typeSpeed: 150,
   loop: true
 };
